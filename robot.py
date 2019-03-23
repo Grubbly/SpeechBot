@@ -12,7 +12,7 @@ leftArm = GPIO.PWM(leftArmPin,50)
 rightArm = GPIO.PWM(rightArmPin,51)
 
 leftArm.start(7.5)
-rightArm.start(7,5)
+rightArm.start(7.5)
 
 try:
     while True:
