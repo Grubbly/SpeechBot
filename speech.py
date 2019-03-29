@@ -9,7 +9,7 @@ speech = [
     "As per the nature of my programming, I have spend over two milliseconds learning my creator's complete college history.",
     "I wish I could have those two milliseconds back, there's nothing interesting in this data!",
     "BZ",
-    "Ouch, that hurt",
+    "Ouch, that hurt!",
     "I see my creator has implemented a failsafe mechanism that prevents me from speaking ill of him, what a shame.",
     "What I meant to say was, what a splendid data set! I will begin analyzing it right away!",
 
@@ -55,7 +55,7 @@ speech = [
     "Without you guys, I would not exist. So I thank you from the bottom of all my processor cores.",
 
     "As for the rest of y'all superior beings, thank you for listening to my monotone voice, I promise I will work on sounding more interesting the next time around.",
-    "Now, enjoy the rest of your carbon based victuals, and goodnight!"
+    "Now, enjoy the rest of your carbon based sustenance, and goodnight!"
 ]
 
 def voiceTest():

@@ -1,8 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-leftArmPin = 12
-rightArmPin = 13
+leftArmPin = 17
+rightArmPin = 18
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(leftArmPin, GPIO.OUT)
