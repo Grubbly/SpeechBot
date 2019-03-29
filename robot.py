@@ -6,13 +6,13 @@ rightArmPin = 18
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(leftArmPin, GPIO.OUT)
-# GPIO.setup(rightArmPin, GPIO.OUT)
+GPIO.setup(rightArmPin, GPIO.OUT)
 
 leftArm = GPIO.PWM(leftArmPin,50)
-# rightArm = GPIO.PWM(rightArmPin,51)
+rightArm = GPIO.PWM(rightArmPin,51)
 
 leftArm.start(7.5)
-# rightArm.start(7.5)
+rightArm.start(7.5)
 
 try:
     while True:
@@ -20,9 +20,11 @@ try:
         time.sleep(.3)
         leftArm.ChangeDutyCycle(10)
         time.sleep(.3)
-   #     rightArm.ChangeDutyCycle(7.5)
-   #     time.sleep(1)
+        rightArm.ChangeDutyCycle(7.5)
+        time.sleep(.3)
+        rightArm.ChangeDutyCycle(10)
+        time.sleep(.3)
 except KeyboardInterrupt:
         leftArm.stop()
-    #    rightArm.stop()
+        rightArm.stop()
         GPIO.cleanup()
