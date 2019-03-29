@@ -17,9 +17,9 @@ leftArm.start(7.5)
 try:
     while True:
         leftArm.ChangeDutyCycle(7.5)
-        time.sleep(1)
+        time.sleep(.3)
         leftArm.ChangeDutyCycle(10)
-        time.sleep(1)
+        time.sleep(.3)
    #     rightArm.ChangeDutyCycle(7.5)
    #     time.sleep(1)
 except KeyboardInterrupt:
