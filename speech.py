@@ -1,4 +1,5 @@
 import pyttsx3
+from playsound import playsound
 
 engine = pyttsx3.init()
 
@@ -75,9 +76,17 @@ def startFrom(index):
         engine.say(speech[i])
         engine.runAndWait()
 
+def failsafe():
+    playsound("shock.wav")
+    playsound("fizz.wav")
+    playsound("short.wav")
+
 def playAll():
     for text in speech:
-        say(text)
-        engine.runAndWait()
+        if text != "BZ":
+            say(text)
+            engine.runAndWait()
+        else:
+            failsafe()
 
 playAll()
