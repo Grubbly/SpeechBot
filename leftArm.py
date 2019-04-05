@@ -8,7 +8,7 @@ GPIO.setup(leftArmPin, GPIO.OUT)
 
 leftArm = GPIO.PWM(leftArmPin,50)
 
-leftArm.start(7.5)
+leftArm.start(15)
 
 try:
     while True:
