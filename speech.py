@@ -77,7 +77,6 @@ def startFrom(index):
         engine.runAndWait()
 
 def failsafe():
-    playsound("shock.wav")
     playsound("fizz.wav")
     playsound("short.wav")
 
